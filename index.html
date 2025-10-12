@@ -1,50 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cubyter LLC</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      background: #f9fafb;
-      color: #111;
       margin: 0;
       padding: 0;
+      background-color: #f9fafb;
+      color: #111;
+      line-height: 1.6;
     }
+
     header {
-      padding: 2rem;
-      background: #2563eb;
+      background-color: #2563eb;
       color: white;
+      padding: 2rem 1rem;
+      text-align: center;
     }
+
+    header h1 {
+      margin: 0.2rem 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin: 0.5rem 0 0 0;
+    }
+
     section {
-      padding: 2rem;
-      max-width: 600px;
-      margin: auto;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
+
+    h2 {
+      color: #2563eb;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
     footer {
-      margin-top: 2rem;
-      padding: 1rem;
-      background: #e5e7eb;
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #e5e7eb;
+      margin-top: 3rem;
       font-size: 0.9rem;
     }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* 响应式调整 */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      section {
+        margin: 1.5rem auto;
+        padding: 0 0.8rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+      header p {
+        font-size: 0.95rem;
+      }
+      section {
+        margin: 1rem auto;
+        padding: 0 0.5rem;
+      }
+      h2 {
+        font-size: 1.3rem;
+      }
+      ul {
+        padding-left: 1rem;
+      }
+    }
+
   </style>
 </head>
 <body>
+
   <header>
     <h1>Welcome to Cubyter LLC</h1>
     <p>Advertising & Marketing Services</p>
   </header>
+
   <section>
     <h2>About Us</h2>
-    <p>Cubyter LLC provides professional advertising and marketing solutions for businesses seeking growth and visibility.</p>
-    
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:info@cubyter.com">info@cubyter.com</a></p>
+    <p>
+      Cubyter LLC provides professional advertising and marketing solutions for businesses seeking growth and visibility.
+      We specialize in digital campaigns, social media strategy, and performance marketing.
+    </p>
   </section>
+
+  <section>
+    <h2>Our Services</h2>
+    <ul>
+      <li>Facebook & Instagram Advertising</li>
+      <li>Google Ads Campaigns</li>
+      <li>Social Media Management</li>
+      <li>Marketing Strategy & Consulting</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>If you want to reach us, email at: </p>
+    <p>
+      <!-- JS 隐藏邮箱，防止爬虫 -->
+      <script>
+        var user = "info";
+        var domain = "cubyter.com";
+        document.write('<a href="mailto:' + user + '@' + domain + '">' + user + '@' + domain + '</a>');
+      </script>
+    </p>
+    <p>Or fill out our <a href="#">contact form</a>.</p>
+  </section>
+
   <footer>
     © 2025 Cubyter LLC. All rights reserved.
   </footer>
+
 </body>
 </html>
