@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CUBYTER™ LLC - Digital Marketing Services & E-commerce</title>
+    <title>CUBYTER™ LLC - Professional Digital Marketing services & E-commerce</title>
     <style>
-        /* Reset default margins and paddings */
+        /* Reset default styles */
         * {
             margin: 0;
             padding: 0;
@@ -14,37 +14,48 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            line-height: 1.6;
             background-color: #f5f5f5;
             color: #333;
+            line-height: 1.6;
         }
 
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
         header {
-            background-color: #1a73e8;
+            background: linear-gradient(135deg, #1a73e8, #4a90e2);
             color: white;
             text-align: center;
-            padding: 60px 20px 40px 20px;
+            padding: 80px 20px 50px 20px;
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
         }
 
         header p {
-            font-size: 1.1rem;
-            margin-top: 10px;
+            font-size: 1.2rem;
         }
 
+        /* Navigation */
         nav {
             display: flex;
             justify-content: center;
             background-color: #1669c1;
+            flex-wrap: wrap;
         }
 
         nav a {
             color: white;
-            text-decoration: none;
-            padding: 15px 20px;
+            padding: 15px 25px;
             display: block;
         }
 
@@ -52,112 +63,144 @@
             background-color: #145a9e;
         }
 
+        /* Main content */
         main {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 40px auto;
             padding: 0 20px;
         }
 
         section {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
         h2 {
             color: #1a73e8;
-            margin-bottom: 15px;
-            font-size: 1.8rem;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #1a73e8;
+            display: inline-block;
+            padding-bottom: 5px;
         }
 
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
+        /* Service cards */
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
-        footer {
-            background-color: #e0e0e0;
-            text-align: center;
+        .card {
+            background: white;
             padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            flex: 1 1 250px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #1a73e8;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px 10px;
+            background-color: #e0e0e0;
             font-size: 0.9rem;
         }
 
-        /* Responsive adjustments */
+        /* Responsive */
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2rem;
             }
-
             h2 {
-                font-size: 1.5rem;
+                font-size: 1.6rem;
             }
-
-            nav {
+            .services {
                 flex-direction: column;
-            }
-
-            nav a {
-                padding: 12px 0;
             }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>CUBYTER™ LLC</h1>
-        <p>Professional Digital Marketing & Electronics E-commerce</p>
-    </header>
+<header>
+    <h1>CUBYTER™ LLC</h1>
+    <p>Professional Digital Marketing services & E-commerce</p>
+</header>
 
-    <nav>
-        <a href="#about">About Us</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>
-                <strong>CUBYTER™ LLC</strong> is dedicated to helping businesses grow through two main areas:
-            </p>
-            <ul>
-                <li><strong>Digital Marketing:</strong> Facebook Ads, Google Ads, and other online advertising platforms, delivering customized strategies and growth plans for our clients.</li>
-                <li><strong>Electronics E-commerce:</strong> Selling quality electronic products online, providing a seamless shopping experience and customer service.</li>
-            </ul>
-        </section>
+<main>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            <strong>CUBYTER™ LLC</strong> is dedicated to helping businesses grow through two main areas:
+        </p>
+        <ul>
+            <li><strong>Digital Marketing:</strong> Facebook Ads, Google Ads, and other online advertising platforms, delivering customized strategies and growth plans for our clients.</li>
+            <li><strong>E-commerce:</strong> Operating online stores across various industries, providing seamless shopping experiences and excellent customer service.</li>
+        </ul>
+    </section>
 
-        <section id="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Facebook Ads Management</li>
-                <li>Google Ads and Other Platform Advertising</li>
-                <li>Electronics E-commerce Sales</li>
-                <li>Online Store Management & Support</li>
-            </ul>
-        </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Facebook Ads Management</h3>
+                <p>Create, manage, and optimize Facebook advertising campaigns to reach your target audience effectively.</p>
+            </div>
+            <div class="card">
+                <h3>Google Ads & Other Platforms</h3>
+                <p>Run Google Ads and other online campaigns with data-driven strategies to maximize ROI.</p>
+            </div>
+            <div class="card">
+                <h3>E-commerce Solutions</h3>
+                <p>Build and manage online stores, ensuring smooth transactions, product management, and customer satisfaction.</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="#" id="email-link">[email protected]</a></p>
-            <p>Website: <a href="https://www.cubyter.com" target="_blank">www.cubyter.com</a></p>
-        </section>
-    </main>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="#" id="email-link">[email protected]</a></p>
+        <p>Website: <a href="https://www.cubyter.com" target="_blank">www.cubyter.com</a></p>
+    </section>
+</main>
 
-    <footer>
-        &copy; 2025 CUBYTER™ LLC. All Rights Reserved.
-    </footer>
+<footer>
+    &copy; 2025 CUBYTER™ LLC. All Rights Reserved.
+</footer>
 
-    <script>
-        // Email obfuscation
-        document.addEventListener("DOMContentLoaded", function() {
-            var user = "info";
-            var domain = "cubyter.com";
-            var email = user + "@" + domain;
+<script>
+    // Email obfuscation
+    document.addEventListener("DOMContentLoaded", function() {
+        var user = "info";
+        var domain = "cubyter.com";
+        var email = user + "@" + domain;
 
-            var emailLink = document.getElementById("email-link");
-            emailLink.textContent = email;
-            emailLink.href = "mailto:" + email;
-        });
-    </script>
+        var emailLink = document.getElementById("email-link");
+        emailLink.textContent = email;
+        emailLink.href = "mailto:" + email;
+    });
+</script>
 
 </body>
 </html>
