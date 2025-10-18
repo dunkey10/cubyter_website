@@ -83,6 +83,17 @@
             padding-bottom: 5px;
         }
 
+        /* About Us list */
+        ul {
+            list-style-type: disc;
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
         /* Service cards */
         .services {
             display: flex;
@@ -95,7 +106,7 @@
             padding: 18px;
             border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-            flex: 1 1 300px; /* default width */
+            flex: 1 1 300px;
             transition: transform 0.2s, box-shadow 0.2s;
         }
 
@@ -136,13 +147,17 @@
                 font-size: 1.5rem;
             }
 
+            ul {
+                padding-left: 20px; /* 手机端缩进稍小 */
+            }
+
             .services {
                 flex-direction: column;
                 gap: 12px;
             }
 
             .card {
-                flex: 1 1 100%; /* full width on mobile */
+                flex: 1 1 100%;
                 padding: 15px;
             }
         }
