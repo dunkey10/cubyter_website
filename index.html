@@ -1,234 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CUBYTER™ LLC - Professional Digital Marketing services & E-commerce</title>
-    <style>
-        /* Reset default styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cubyter™ | Creative Earphone Design from Seattle</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: "Inter", Arial, sans-serif;
+      background: linear-gradient(135deg, #0a0f1c, #1c2742);
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+    }
 
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
+    h1 {
+      font-size: 4rem;
+      margin: 0;
+      letter-spacing: 2px;
+      font-weight: 800;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards 0.2s;
+    }
 
-        a {
-            color: #1a73e8;
-            text-decoration: none;
-        }
+    h1 span.tm {
+      font-size: 1.2rem;
+      vertical-align: super;
+      margin-left: 6px;
+      opacity: 0.7;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    h2 {
+      font-size: 1rem;
+      margin-top: 1rem;
+      font-weight: 400;
+      white-space: nowrap;
+      color: rgba(255, 255, 255, 0.95); /* 更清晰 */
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards 0.6s;
+    }
 
-        /* Header */
-        header {
-            background: linear-gradient(135deg, #1a73e8, #4a90e2);
-            color: white;
-            text-align: center;
-            padding: 60px 20px 40px 20px;
-        }
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: #7f8ba4;
+    }
 
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.1rem;
-        }
-
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #1669c1;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            color: white;
-            padding: 12px 20px;
-            display: block;
-        }
-
-        nav a:hover {
-            background-color: #145a9e;
-        }
-
-        /* Main content */
-        main {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 0 15px;
-        }
-
-        section {
-            margin-bottom: 40px;
-        }
-
-        h2 {
-            color: #1a73e8;
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            border-bottom: 3px solid #1a73e8;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-
-        /* About Us list */
-        ul {
-            list-style-type: disc;
-            padding-left: 25px;
-            margin-top: 10px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        /* Service cards */
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .card {
-            background: white;
-            padding: 18px;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-            flex: 1 1 300px;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.12);
-        }
-
-        .card h3 {
-            margin-bottom: 8px;
-            color: #1a73e8;
-            font-size: 1.2rem;
-        }
-
-        .card p {
-            font-size: 0.95rem;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px 10px;
-            background-color: #e0e0e0;
-            font-size: 0.9rem;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            header p {
-                font-size: 1rem;
-            }
-
-            h2 {
-                font-size: 1.5rem;
-            }
-
-            ul {
-                padding-left: 20px; /* 手机端缩进稍小 */
-            }
-
-            .services {
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            .card {
-                flex: 1 1 100%;
-                padding: 15px;
-            }
-        }
-    </style>
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
-
-<header>
-    <h1>CUBYTER™ LLC</h1>
-    <p>Professional Digital Marketing services & E-commerce</p>
-</header>
-
-<nav>
-    <a href="#about">About Us</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<main>
-    <section id="about">
-        <h2>About Us</h2>
-        <p>
-            <strong>CUBYTER™ LLC</strong> is dedicated to helping businesses grow through two main areas:
-        </p>
-        <ul>
-            <li><strong>Digital Marketing:</strong> Facebook Ads, Google Ads, and other online advertising platforms, delivering customized strategies and growth plans for our clients.</li>
-            <li><strong>E-commerce:</strong> Operating online stores across various industries, providing seamless shopping experiences and excellent customer service.</li>
-        </ul>
-    </section>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services">
-            <div class="card">
-                <h3>Facebook Ads Management</h3>
-                <p>Create, manage, and optimize Facebook advertising campaigns to reach your target audience effectively.</p>
-            </div>
-            <div class="card">
-                <h3>Google Ads & Other Platforms</h3>
-                <p>Run Google Ads and other online campaigns with data-driven strategies to maximize ROI.</p>
-            </div>
-            <div class="card">
-                <h3>E-commerce Solutions</h3>
-                <p>Build and manage online stores, ensuring smooth transactions, product management, and customer satisfaction.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="#" id="email-link">[email protected]</a></p>
-        <p>Website: <a href="https://www.cubyter.com" target="_blank">www.cubyter.com</a></p>
-    </section>
-</main>
-
-<footer>
-    &copy; 2025 CUBYTER™ LLC. All Rights Reserved.
-</footer>
-
-<script>
-    // Email obfuscation
-    document.addEventListener("DOMContentLoaded", function() {
-        var user = "info";
-        var domain = "cubyter.com";
-        var email = user + "@" + domain;
-
-        var emailLink = document.getElementById("email-link");
-        emailLink.textContent = email;
-        emailLink.href = "mailto:" + email;
-    });
-</script>
-
+  <h1>CUBYTER<span class="tm">&#8482;</span></h1>
+  <h2>Crafting innovative earphones in Seattle — where sound meets style.</h2>
+  <footer>© 2025 Cubyter Inc. All rights reserved.</footer>
 </body>
 </html>
